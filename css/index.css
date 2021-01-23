@@ -29,8 +29,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    background: white
+
 }
+
+
 ol, ul {
 	list-style: none;
 }
@@ -56,6 +60,28 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+   display: flex;
+   justify-content: center;
+   margin: 2%;
+}
+
+.topnav a{
+    color: black;
+    text-decoration: none;
+    width: 800px;
+    justify-content: space-evenly;
+    padding: 0 .25%;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+div .top-image {
+    margin: 2.5% auto;
+}
+
+
+
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
@@ -80,6 +106,7 @@ p {
 }
 
 .top-content .text-container {
+ 
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
@@ -134,13 +161,56 @@ footer {
 footer nav {
     width: 60%;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 12px;
+    background: black;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* Since there are so many, seemed best to put them here at the bottom?*/
+#box1 {
+    background-color: teal;
+}
+#box2 {
+    background-color: gold;
+}
+
+#box3 {
+    background-color: cadetblue;
+}
+
+#box4 {
+    background-color: coral;
+}
+
+#box5 {
+    background-color: crimson;
+}
+
+#box6 {
+    background-color: forestgreen;
+}
+
+#box7 {
+    background-color: darkorchid;
+}
+
+#box8 {
+    background-color: hotpink;
+}
+
+#box9 {
+    background-color: indigo;
+}
+
+#box10 {
+    background-color: dodgerblue;
+}
+
