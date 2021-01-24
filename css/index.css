@@ -16,7 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     background: white
+    
 
 }
 
@@ -57,6 +58,9 @@ table {
 
 html, body {
     height: 100%;
+    max-width: 80%;
+    
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -64,29 +68,36 @@ header {
    display: flex;
    justify-content: center;
    margin: 2%;
+  
 }
 
 .topnav {
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 1%;
+
+
+    
     width: 50%;
 }
 
 .topnav a{
-
+    display:flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-evenly;
     color: black;
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
-    padding: 1%;
+    margin: 0 auto;
+    
 
 }
 
 div .top-image {
-    margin: 2.5% auto;
+    margin: 2%  auto;
+    width: 800px;
+    height: 153px;
 }
 
 
@@ -184,6 +195,8 @@ footer nav a {
 }
 
 /* Since there are so many, seemed best to put them here at the bottom?*/
+
+
 #box1 {
     background-color: teal;
 }
@@ -225,21 +238,35 @@ footer nav a {
 
 /*things special to the About page go below here! */
 
+
 .content {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-top-content {
+
+    border-bottom: 1px dashed black;
+}
+
+.about-top-content p,h2 {
+    padding-left: 2%;
+}
+
+.content article{
    
-    justify-content: space-evenly ;
-    width: 80%;
-   
+    display: flex;
+    flex-direction: row wrap;
+    align-items: flex-start;
+    justify-content: space-between ;
+    width: 50%;
+    box-sizing: content-box;  
     
 }
 
-.content img {
-   
-    margin: 1rem auto;
+article img {
+    padding: 1rem 0;
 }
-
 
 .content button{
     width:fit-content;
@@ -249,18 +276,7 @@ footer nav a {
     padding: 2%;
     margin: 1rem 0 ;
 }
- .content section  {
-    display: inline-block;
-    border-bottom: 1px dashed black;
-   padding: 5%;
-   width: 5rem
-   height: 5rem;
-   margin: 0 10%;
-   
-    
-     
-     
- }
+
 
  .strategy {
     display: flex;
@@ -268,6 +284,8 @@ footer nav a {
     align-content: space-between;
     justify-content: space-evenly;
     border-bottom: 1px dotted black;
+   
+    
     
     
  }
@@ -275,30 +293,31 @@ footer nav a {
  .how {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: space-between;
     justify-content: space-evenly;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted black;k;
+   
     
 
  }
  .places {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: space-between;
     justify-content: space-evenly;
     border-bottom: 1px dotted black;
-    flex-grow: 2;
 
  }
  .collab {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: space-between;
     justify-content: space-evenly;
     border-bottom: 1px dotted black;
-    flex-grow: 2;
 
  }
- .description2 {
-     top margin: 2rem;
+
+ div .about-bottom {
+    margin-bottom: 2%;
+     }
  }
