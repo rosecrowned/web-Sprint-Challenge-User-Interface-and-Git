@@ -16,7 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     background: white
+    
 
 }
 
@@ -57,6 +58,9 @@ table {
 
 html, body {
     height: 100%;
+    max-width: 80%;
+    
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -64,20 +68,36 @@ header {
    display: flex;
    justify-content: center;
    margin: 2%;
+  
+}
+
+.topnav {
+    display:flex;
+    flex-direction: row;
+
+
+    
+    width: 50%;
 }
 
 .topnav a{
+    display:flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-evenly;
     color: black;
     text-decoration: none;
-    width: 800px;
-    justify-content: space-evenly;
-    padding: 0 .25%;
     font-weight: bold;
     font-size: 12px;
+    margin: 0 auto;
+    
+
 }
 
 div .top-image {
-    margin: 2.5% auto;
+    margin: 2%  auto;
+    width: 800px;
+    height: 153px;
 }
 
 
@@ -175,6 +195,8 @@ footer nav a {
 }
 
 /* Since there are so many, seemed best to put them here at the bottom?*/
+
+
 #box1 {
     background-color: teal;
 }
@@ -214,3 +236,88 @@ footer nav a {
     background-color: dodgerblue;
 }
 
+/*things special to the About page go below here! */
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-top-content {
+
+    border-bottom: 1px dashed black;
+}
+
+.about-top-content p,h2 {
+    padding-left: 2%;
+}
+
+.content article{
+   
+    display: flex;
+    flex-direction: row wrap;
+    align-items: flex-start;
+    justify-content: space-between ;
+    width: 50%;
+    box-sizing: content-box;  
+    
+}
+
+article img {
+    padding: 1rem 0;
+}
+
+.content button{
+    width:fit-content;
+    background-color: white;
+    border: 5px thick black;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 1rem 0 ;
+}
+
+
+ .strategy {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-evenly;
+    border-bottom: 1px dotted black;
+   
+    
+    
+    
+ }
+
+ .how {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-evenly;
+    border-bottom: 1px dotted black;k;
+   
+    
+
+ }
+ .places {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-evenly;
+    border-bottom: 1px dotted black;
+
+ }
+ .collab {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-evenly;
+    border-bottom: 1px dotted black;
+
+ }
+
+ div .about-bottom {
+    margin-bottom: 2%;
+     }
+ }
